@@ -11,3 +11,8 @@ body{
 #main .breadcrumbs{
 	margin-top: 20px;
 }
+#navigation #brand{
+	padding-right: 10px;
+	padding-left: 0;
+	font-size: 18px;
+}

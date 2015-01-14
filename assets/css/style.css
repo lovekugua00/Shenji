@@ -5110,11 +5110,11 @@ label, input, button, select, textarea {
   padding-left: 35px;
   padding-bottom: 2px;
   line-height: 20px;
-  background: url("../img/logo.png") no-repeat;
+  background: url("../images/logo.png") no-repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   #navigation #brand {
-    background: url("../img/logo@2x.png") no-repeat;
+    background: url("../images/logo@2x.png") no-repeat;
     background-size: 22px 22px;
   }
 }
@@ -6789,27 +6789,27 @@ label, input, button, select, textarea {
   border-top: 2px solid #ccc;
 }
 .table.dataTable.dataTable-grouping .group.expanded-group {
-  background: url("../img/expanded-group.jpg") no-repeat left center #e6e6e6;
+  background: url("../images/expanded-group.jpg") no-repeat left center #e6e6e6;
   padding-left: 33px;
 }
 .table.dataTable.dataTable-grouping .group.expanded-group:hover {
   cursor: pointer;
 }
 .table.dataTable.dataTable-grouping .group.collapsed-group {
-  background: url("../img/collapsed-group.jpg") no-repeat left center #e6e6e6;
+  background: url("../images/collapsed-group.jpg") no-repeat left center #e6e6e6;
   padding-left: 33px;
 }
 .table.dataTable.dataTable-grouping .group.collapsed-group:hover {
   cursor: pointer;
 }
 .table.dataTable .sorting_asc {
-  background: url("../img/sorting-asc.png") no-repeat right center #eee;
+  background: url("../images/sorting-asc.png") no-repeat right center #eee;
 }
 .table.dataTable .sorting_desc {
-  background: url("../img/sorting-desc.png") no-repeat right center #eee;
+  background: url("../images/sorting-desc.png") no-repeat right center #eee;
 }
 .table.dataTable .sorting {
-  background: url("../img/sorting.png") no-repeat right center #eee;
+  background: url("../images/sorting.png") no-repeat right center #eee;
 }
 .table.dataTable .sorting, .table.dataTable .sorting_desc, .table.dataTable .sorting_asc {
   padding-right: 30px;
@@ -7720,8 +7720,8 @@ body.error .wrapper .buttons {
   color: #fff;
   display: block;
   font-weight: 300;
-  font-size: 48px;
-  text-align: center;
+  font-size: 36px;
+  color:#FFF;
   padding: 2px 0;
   text-decoration: none;
 }
@@ -7757,6 +7757,7 @@ body.error .wrapper .buttons {
 }
 .login .wrapper .login-body .submit input {
   float: right;
+  padding: 6px 20px;
 }
 .login .wrapper .login-body .submit .remember {
   float: left;
@@ -7773,7 +7774,7 @@ body.error .wrapper .buttons {
   line-height: 21px;
 }
 .login .wrapper .login-body .forget {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .login .wrapper .login-body .forget a {
   background: #eee;

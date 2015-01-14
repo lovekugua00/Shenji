@@ -389,26 +389,8 @@ $(document).ready(function () {
 		$('.dataTable').each(function () {
 			var $el = $(this),
 				dataTable_options = {
-					dom: 'lfrtip',
-					"autoWidth":false,
-					"oLanguage":{
-					    "sProcessing":   "处理中...",
-					    "sLengthMenu":   "显示 _MENU_ 条信息",
-					    "sZeroRecords":  "没有相关信息",
-					    "sInfo":         "显示第 _START_ 至 _END_ 条信息，共 _TOTAL_ 条",
-					    "sInfoEmpty":    "显示第 0 至 0 条，共 0 项",
-					    "sInfoFiltered": "(由 _MAX_ 条信息过滤)",
-					    "sInfoPostFix":  "",
-					    "sSearch":       "搜索:",
-					    "sUrl":          "",
-					    "oPaginate": {
-					      "sFirst":    "首页",
-					      "sPrevious": "上页",
-					      "sNext":     "下页",
-					      "sLast":     "末页"
-					    }
-					}
-				}
+					dom: 'lfrtip'
+				},
 				no_sort = $el.attr('data-nosort');
 			// Skip for custom dataTable
 			if ($el.hasClass('dataTable-custom')) return;
@@ -467,8 +449,8 @@ $(document).ready(function () {
 								select.append('<option value="' + d + '">' + d + '</option>')
 							});
 						} else if (types[i] == 'daterange') {
-							var $from_date = $('<input type="text" class="dataTable-datepicker-from" name="dataTable-daterpicker-from" placeholder="开始日期">').appendTo($filter_col),
-								$to_date = $('<input type="text" class="dataTable-datepicker-to" name="dataTable-daterpicker-to" placeholder="结束日期">').appendTo($filter_col),
+							var $from_date = $('<input type="text" class="dataTable-datepicker-from" name="dataTable-daterpicker-from" placeholder="From...">').appendTo($filter_col),
+								$to_date = $('<input type="text" class="dataTable-datepicker-to" name="dataTable-daterpicker-to" placeholder="To...">').appendTo($filter_col),
 								datepicker_options = {
 									dateFormat: dateformat
 								};
@@ -523,7 +505,7 @@ $(document).ready(function () {
 							});
 						} else if (types[i] !== 'null' || types[i] == 'text') {
 							var title = '',
-								input = $('<input type="text" placeholder="检索 ' + title + '" />')
+								input = $('<input type="text" placeholder="Search ' + title + '" />')
 									.appendTo($filter_col)
 									.on('keyup change', function () {
 										var val = $(this).val();
@@ -703,5 +685,3 @@ function resize_chosen() {
 		$el.find(".chzn-search input").css('width', ($el.parent().width() - 37) + 'px');
 	});
 }
-
-
