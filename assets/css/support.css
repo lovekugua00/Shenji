@@ -1,0 +1,13 @@
+body{
+	font-family: "microsoft yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#navigation .user .dropdown > a{
+	line-height: 26px;
+}
+#left .subnav .subnav-menu > li > a{
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+#main .breadcrumbs{
+	margin-top: 20px;
+}
