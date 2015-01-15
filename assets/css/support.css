@@ -21,8 +21,11 @@ body{
 }
 .form-actions{
 	padding-top: 30px;
-	text-align: right;
 }
 .form-actions .btn{
 	padding:10px 26px;
+}
+#navigation{
+	height: 40px;
+	overflow: hidden;
 }
