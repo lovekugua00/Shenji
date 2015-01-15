@@ -72,7 +72,7 @@
 </head>
 
 <body>
-	<div id="navigation">
+	<div id="navigation" class="navbar-fixed-top">
 		<div class="container-fluid">
 			<a href="#" id="brand">工程审计监管平台</a>
 			<a href="#" class="toggle-nav" rel="tooltip" data-placement="bottom" title="折叠左侧导航">
@@ -232,7 +232,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid" id="content">
+	<div class="container-fluid nav-fixed" id="content">
 		<div id="left">
 			<form action="search-results.html" method="GET" class='search-form'>
 				<div class="search-pane">
@@ -335,69 +335,63 @@
 									</a>
 								</div>
 								<table class="table table-hover table-nomargin table-bordered dataTable" data-column_filter_dateformat="yy-mm-dd"  data-nosort="0" data-checkall="all">
-									<colgroup>
-										<col></col>
-										<col></col>
-										<col></col>
-										<col width="20%"></col>
-									</colgroup>
 									<thead>
 										<tr>
-											<th class='with-checkbox'>
+											<th class='with-checkbox hidden-480'>
 												<input type="checkbox" name="check_all" class="dataTable-checkall">
 											</th>
 											<th>序号</th>
-											<th>项目编号</th>
+											<th class="hidden-480">项目编号</th>
 											<th>项目名称</th>
- 											<th>
+ 											<th class="hidden-480">
 												计划开工日期
 											</th>
-											<th>
+											<th class="hidden-480">
 												审计类型
 											</th>
 											<th>
 												合同价
 											</th>
-											<th>
+											<th class='hidden-1024'>
 												实施纲要
 											</th>
-											<th>
+											<th class='hidden-1024'>
 												实施方案
 											</th>
-											<th>
+											<th class='hidden-1024'>
 												审计通知书
 											</th> 
-											<th class='hidden-480'>操作
+											<th class='hidden-1024'>操作
 											</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td class="with-checkbox">
+											<td class="with-checkbox hidden-480">
 												<input type="checkbox" name="check" value="1">
 											</td>
 											<td>1</td>
-											<td>PA20150001</td>
+											<td class="hidden-480">PA20150001</td>
 											<td>南京美盛废旧金属回收利用有限公司年加工3000吨废线路板项目</td>
-											<td>
+											<td  class="hidden-480">
 												2015-01-12
 											</td>
-											<td class='hidden-350'>
+											<td class='hidden-480'>
 												全程跟踪审计
 											</td>
-											<td class='hidden-1024'>
+											<td>
 											￥9996.12
 											</td>
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>					
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>						
-											<td class='hidden-480'>
+											<td class='hidden-1024'>
 												<a href="#" class="btn" rel="tooltip" title="" data-original-title="查看"><i class="fa fa-search"></i>
 												</a>
 												<a href="#" class="btn" rel="tooltip" title="修改">
@@ -406,33 +400,33 @@
 
 											</td>
 										</tr>
-										<tr>
-											<td class="with-checkbox">
+ 										<tr>
+											<td class="with-checkbox hidden-480">
 												<input type="checkbox" name="check" value="1">
 											</td>
 											<td>2</td>
-											<td>PA20150002</td>
-											<td>南京财经大学仙林校区青年教师公共租赁住房建设项目（南京财经大学）</td>
-											<td>
+											<td class="hidden-480">PA20150002</td>
+											<td>南京财经大学仙林校区青年教师公共租赁住房建设项目</td>
+											<td class='hidden-480'>
 												2015-02-11		
 											</td>
 
-											<td class='hidden-350'>
+											<td class='hidden-480'>
 												结算审计项目
 											</td>
-											<td class='hidden-1024'>
+											<td>
 												￥6454852
 											</td>
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>					
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>											
-											<td class='hidden-480'>
+											<td class='hidden-1024'>
 												<a href="#" class="btn" rel="tooltip" title="" data-original-title="查看"><i class="fa fa-search"></i>
 												</a>
 												<a href="#" class="btn" rel="tooltip" title="修改">
@@ -442,29 +436,29 @@
 											</td>
 										</tr>
 										<tr>
-											<td class="with-checkbox">
+											<td class="with-checkbox hidden-480">
 												<input type="checkbox" name="check" value="1">
 											</td>
 											<td>3</td>
-											<td>PA20150003</td>
+											<td class="hidden-480">PA20150003</td>
 											<td>南京市NO.2008G24地块“乐居雅花园”小区学校、社区服务中心</td>
-											<td>2015-02-04</td>
-											<td class='hidden-350'>
+											<td  class="hidden-480">2015-02-04</td>
+											<td class='hidden-480'>
 												全程跟踪审计
 											</td>
-											<td class='hidden-1024'>
+											<td>
 											￥1962.01
 											</td>
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>					
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>											
-											<td class='hidden-480'>
+											<td class='hidden-1024'>
 												<a href="#" class="btn" rel="tooltip" title="" data-original-title="查看"><i class="fa fa-search"></i>
 												</a>
 												<a href="#" class="btn" rel="tooltip" title="修改">
@@ -474,28 +468,28 @@
 											</td>
 										</tr>
 										<tr>
-											<td class="with-checkbox">
+											<td class="with-checkbox hidden-480">
 												<input type="checkbox" name="check" value="1">
 											</td>
 											<td>4</td>
-											<td>PA20150004</td>
+											<td class="hidden-480">PA20150004</td>
 											<td> 
-											南京柯莱特软件园开发有限公司柯莱特软件园项目（南京柯莱特软件..）
+											南京柯莱特软件园开发有限公司柯莱特软件园项目
 											</td>
-											<td>2015-04-21</td>
-											<td class='hidden-350'>
+											<td class="hidden-480">2015-04-21</td>
+											<td class='hidden-480'>
 												结算审计项目
 											</td>
-											<td class='hidden-1024'>
+											<td>
 												￥896421
 											</td>
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>					
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>											
 											<td class='hidden-480'>
@@ -508,28 +502,31 @@
 											</td>
 										</tr>
 										<tr>
-											<td class="with-checkbox">
+											<td class="with-checkbox hidden-480">
 												<input type="checkbox" name="check" value="1">
 											</td>
 											<td>5</td>
-											<td>PA20150005</td>
-											<td>中国东方航空江苏有限公司南京市食品楼改造项目（中国东方航空江苏有限公司）</td>
-											<td>2015-09-14</td>
-											<td class='hidden-350'>
+											<td class="hidden-480">PA20150005</td>
+											<td>中国东方航空江苏有限公司南京市食品楼改造项目</td>
+											<td class="hidden-480">
+											2015-09-14
+											</td>
+											<td class='hidden-480'>
 												全程跟踪审计
 											</td>
-											<td class='hidden-1024'>124150
-											</td>
 											<td>
+												124150
+											</td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>					
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>											
-											<td class='hidden-480'>
+											<td class='hidden-1024'>
 												<a href="#" class="btn" rel="tooltip" title="" data-original-title="查看"><i class="fa fa-search"></i>
 												</a>
 												<a href="#" class="btn" rel="tooltip" title="修改">
@@ -539,29 +536,29 @@
 											</td>
 										</tr>
 										<tr>
-											<td class="with-checkbox">
+											<td class="with-checkbox hidden-480">
 												<input type="checkbox" name="check" value="1">
 											</td>
 											<td>6</td>
-											<td>PA20150006</td>
-											<td>南京市明发科技商务城一期A地块项目（南京联昌机电有限公司）</td>
-											<td>2015-03-09</td>
-											<td class='hidden-350'>
+											<td class="hidden-480">PA20150006</td>
+											<td>南京市明发科技商务城一期A地块项目</td>
+											<td class="hidden-480">2015-03-09</td>
+											<td class='hidden-480'>
 												全程跟踪审计
 											</td>
-											<td class='hidden-1024'>
+											<td>
 												￥56864123.24
 											</td>
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>					
-											<td>
+											<td class='hidden-1024'>
 												<a href="#">查看</a>
 											</td>											
-											<td class='hidden-480'>
+											<td class='hidden-1024'>
 												<a href="#" class="btn" rel="tooltip" title="" data-original-title="查看"><i class="fa fa-search"></i>
 												</a>
 												<a href="#" class="btn" rel="tooltip" title="修改">

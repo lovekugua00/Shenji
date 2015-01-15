@@ -25,7 +25,6 @@ body{
 .form-actions .btn{
 	padding:10px 26px;
 }
-#navigation{
+#navigation .user{
 	height: 40px;
-	overflow: hidden;
 }
