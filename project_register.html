@@ -10,12 +10,14 @@
 	<!-- Apple devices fullscreen -->
 	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-	<title>工程审计监管平台</title>
+	<title>工程审计监管平台——项目注册</title>
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<!-- jQuery UI -->
 	<link rel="stylesheet" href="assets/css/plugins/jquery-ui/jquery-ui.min.css">
+	<!-- Datepicker -->
+	<link rel="stylesheet" href="assets/css/plugins/datepicker/datepicker.css">
 	<!-- Theme CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- Color CSS -->
@@ -26,13 +28,15 @@
 
 	<!-- jQuery -->
 	<script src="assets/js/jquery.min.js"></script>
-
+	<!-- CKEditor -->
+	<script src="assets/js/plugins/ckeditor/ckeditor.js"></script>
 	<!-- Nice Scroll -->
 	<script src="assets/js/plugins/nicescroll/jquery.nicescroll.min.js"></script>
 	<!-- imagesLoaded -->
 	<script src="assets/js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
-	<!-- jQuery UI -->
-	<script src="assets/js/plugins/jquery-ui/jquery-ui.js"></script>
+
+	<!-- datepicker -->
+	<script src="assets/js/plugins/datepicker/bootstrap-datepicker.js"></script>
 	<!-- slimScroll -->
 	<script src="assets/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 	<!-- Bootstrap -->
@@ -186,6 +190,21 @@
 							</li>
 						</ul>
 					</li>
+					<li class="dropdown sett">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="fa fa-cog"></i>
+						</a>
+						<ul class="dropdown-menu pull-right theme-settings">
+							<li>
+								<span>页面Layout</span>
+
+								<div class="version-toggle">
+									<a href="#" class="set-fixed">固定宽度</a>
+									<a href="#" class="active set-fluid">流式布局</a>
+								</div>
+							</li>
+						</ul>
+					</li>					
 				</ul>
 				<div class="dropdown">
 					<a href="#" class='dropdown-toggle' data-toggle="dropdown">
@@ -314,36 +333,39 @@
 									</div>
 									<div class="form-group">
 										<label for="emailfield" class="control-label col-sm-2">计划开工时间</label>
-										<div class="col-sm-5">
-											<input type="text" name="textfield" id="textfield" class="form-control datepick">
+										<div class="col-sm-2">
+											<input type="text" name="textfield" id="textfield" class="form-control datepick" data-rule-dateiso="true">
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="pwfield" class="control-label col-sm-2">Password</label>
-										<div class="col-sm-10">
-											<input type="text" name="pwfield" id="pwfield" class="form-control" data-rule-required="true">
+										<label for="pwfield" class="control-label col-sm-2">审计类型</label>
+										<div class="col-sm-2">
+											<select name="aaa" id="bbb" class="form-control" data-rule-required="true">
+												<option value="1">全程跟踪审计
+												</option>
+												<option value="1">结算审计
+												</option>
+											</select>
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="confirmfield" class="control-label col-sm-2">Confirm password</label>
-										<div class="col-sm-10">
-											<input type="text" name="confirmfield" id="confirmfield" class="form-control" data-rule-equalTo="#pwfield" data-rule-required="true">
+										<label for="confirmfield" class="control-label col-sm-2">合同价格</label>
+										<div class="col-sm-2">
+											<input type="text" placeholder="填写合同价格" name="datefield" id="datefield" data-rule-number="true" data-rule-required="true" class="form-control">
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="policy" class="control-label col-sm-2">Agree our policy</label>
+
+										<label for="confirmfield" class="control-label col-sm-2">项目描述
+										</label>
 										<div class="col-sm-10">
-											<div class="checkbox">
-												<label>
-													<input type="checkbox" name="policy" value="agree" data-rule-required="true">I agree the policy.
-												</label>
-											</div>
+											<form action="#" method="POST" class='form-wysiwyg'>
+											<textarea data-rule-required="true" name="ck" class='ckeditor span12' rows="5"></textarea></form>
 										</div>
+	
 									</div>
 									<div class="form-actions">
-										<input type="submit" class="btn btn-primary" value="Submit">
-										<button type="button" class="btn">Cancel</button>
-									</div>
+										<input type="submit" class="btn btn-primary" value="提交">
 								</form>
 							</div>
 						</div>
@@ -355,6 +377,11 @@
 	<script type="text/javascript">
 		$('#nav-parent').text($('.main-nav .active span').text());
 		$('#nav-child').text($('.subnav-menu .active a').text())
+		$.extend(jQuery.validator.messages,{
+			required:'内容不能为空',
+			number: "请输入合法的数字",
+			minlength:"至少输入两个字符"
+		})
 	</script>
 </body>
 
