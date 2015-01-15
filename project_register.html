@@ -73,13 +73,18 @@
 </head>
 
 <body>
-	<div id="navigation">
+	<div id="navigation" class="navbar-fixed-top">
 		<div class="container-fluid">
-			<a href="#" id="brand">FLAT</a>
-			<a href="#" class="toggle-nav" rel="tooltip" data-placement="bottom" title="Toggle navigation">
+			<a href="#" id="brand">工程审计监管平台</a>
+			<a href="#" class="toggle-nav" rel="tooltip" data-placement="bottom" title="折叠左侧导航">
 				<i class="fa fa-bars"></i>
 			</a>
 			<ul class='main-nav'>
+				<li>
+					<a href="#">
+						<span>首页</span>
+					</a>
+				</li>			
 				<li class="active">
 					<a href="index.html">
 						<span>项目注册</span>
@@ -196,11 +201,11 @@
 						</a>
 						<ul class="dropdown-menu pull-right theme-settings">
 							<li>
-								<span>页面Layout</span>
+								<span>页面布局</span>
 
 								<div class="version-toggle">
 									<a href="#" class="set-fixed">固定宽度</a>
-									<a href="#" class="active set-fluid">流式布局</a>
+									<a href="#" class="active set-fluid">自适应</a>
 								</div>
 							</li>
 						</ul>
@@ -208,7 +213,7 @@
 				</ul>
 				<div class="dropdown">
 					<a href="#" class='dropdown-toggle' data-toggle="dropdown">
-						Admin
+						张三
 					</a>
 					<ul class="dropdown-menu pull-right">
 						<li>
@@ -227,7 +232,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid" id="content">
+	<div class="container-fluid nav-fixed" id="content">
 		<div id="left">
 			<form action="search-results.html" method="GET" class='search-form'>
 				<div class="search-pane">
