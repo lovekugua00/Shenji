@@ -17,3 +17,5 @@
 .text-input-long{width:520px;}
 .text-input-medium{width:360px;}
 .text-input{width:200px;}
+.article #title{font-size:36px;text-align:center;}
+.article p{text-indent:2em;line-height:2em;}
