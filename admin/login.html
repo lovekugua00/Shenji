@@ -46,6 +46,15 @@
 	<![endif]-->
 
 	<!-- Apple devices Homescreen icon -->
+	<style type="text/css">
+		.remember{
+			font-weight: normal;
+		}
+		#remember{
+			float:none;
+			margin-bottom: -6px;
+		}
+	</style>
 </head>
 
 <body class='login'>
@@ -67,10 +76,14 @@
 					</div>
 				</div>
 				<div class="submit">
-					<div class="remember">
+<!-- 					<div class="remember">
 						<input type="checkbox" name="remember" class='icheck-me' data-skin="square" data-color="blue" id="remember">
 						<label for="remember">记住我</label>
-					</div>
+					</div> -->
+					<label class="remember">
+						<input type="checkbox" id="remember"/>
+						<span>记住我</span>
+					</label>
 					<input type="submit" value="登录" class='btn btn-primary'>
 				</div>
 			</form>

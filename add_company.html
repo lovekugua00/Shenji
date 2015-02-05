@@ -30,12 +30,12 @@
                     </div>
                     <div class="navbar-collapse clearfix">
                         <ul class="navbar-nav">
-                            <li class="active"><a href="#">通知公告</a></li>
+                            <li><a href="#">通知公告</a></li>
                             <li><a href="#">法律法规</a></li>
                             <li><a href="#">跟踪审计项目</a></li>
                             <li><a href="#">结算审计项目</a></li>
                             <li><a href="#">法律法规</a></li>
-                            <li><a href="#">入库企业</a></li>
+                            <li class="active"><a href="#">入库企业</a></li>
                         </ul>                    
                     </div>                 
                 </div>
@@ -44,6 +44,7 @@
 
             <!-- Main -->
             <div class="main container main-index clearfix">
+                
                 <!-- 侧边栏 -->
                 <div class="main-sidebar">
                     <div class="side-section">
@@ -65,42 +66,36 @@
                 <!-- end 侧边栏 -->
                 <!-- 主要内容 -->
                 <div class="main-content">
-
-                    <div class="content-box">
-                        <h2 class="content-head">
-                            通知公告
-                        </h2>
-                        <div class="content-body">
-                            <ul class="text-list">
-                                <li>
-                                    <i></i>
-                                    <a href="#" class="text">
-                                    2015年第二号公共：中国政府奖学金资助标准调整 最高每人每年近10万元
-                                    </a>
-                                    <span class="time">
-                                        2015-01-12
-                                    </span>
-                                    <div class="action">
-                                        <a href="#">删除</a>
-                                        <a href="#">修改</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i></i>
-                                    <a href="#" class="text">
-                                    2015年第二号公共：中国政府奖学金资助标准调整 最高每人每年近10万元
-                                    </a>
-                                    <span class="time">
-                                        2015-01-12
-                                    </span>
-                                    <div class="action">
-                                        <a href="#">删除</a>
-                                        <a href="#">修改</a>
-                                    </div>
-                                </li>                            
-                            </ul>
-                        </div>
+                    <!-- 页面地图 -->
+                    <div class="breadcrumb">
+                        <a href="#">入库企业</a>
+                        <span>></span>
+                        <span>企业信息</span>
                     </div>
+                    <!-- end 页面地图 -->
+
+                    <!-- 标签页 -->
+                    <ul class="nav nav-tabs">
+                      <li class="active">
+                         <a href="#company-info">企业信息</a>
+                      </li>
+                      <li><a href="#">企业人员</a></li>
+                      <li><a href="#">参建项目</a></li>
+                    </ul> 
+                    <div class="nav-contents">
+                        <div class="tab-content" id="company-info">
+                            <div class="form-group">
+                                <label>企业名称</label>             
+                                <input type="text" class="text-word text-large"/>
+                                                             
+                            </div>
+                            <div class="form-group">
+                                <label>企业资质</label>
+                                <input type="text" class="text-word text-medium"/>                      
+                            </div>                            
+                        </div>
+                    </div>                   
+                    <!-- end 标签页 -->
 
                 </div>
                 <!-- end 主要内容 -->

@@ -1,0 +1,38 @@
+
+@mini:2px;
+@small:5px;
+@normal:10px;
+@medium:15px;
+@large:20px;
+@xlarge:40px;
+
+@font_black:#3A3A3A;
+@font_grey:#7A7A7A;
+@font_gray:#999;
+@font_blue:rgb(33, 111, 216);
+@border_grey:#DDD;
+@border_blue:#0A85CF;
+@border_black:#000;
+
+@black:#000;
+@grey:#F9F9F9;
+@blue:#0A85CF;
+@blue_light:#A8DBFA;
+
+@sidebar_width:20%;
+@footer_height:120px;
+
+.borderRadius(@a){
+	-webkit-border-radius:@a;
+	-moz-border-radius:@a;
+	-ms-border-radius:@a;
+	-o-border-radius:@a;
+	border-radius:@a;
+}
+.border-radius(@a:0,@b:0,@c:0,@d:0){
+	-webkit-border-radius:@a @b @c @d;
+	-moz-border-radius:@a @b @c @d;
+	-ms-border-radius:@a @b @c @d;
+	-o-border-radius:@a @b @c @d;
+	border-radius:@a @b @c @d;
+}
