@@ -10,4 +10,10 @@
 .nav-tabs li a:hover{text-decoration:none;}
 .nav-tabs li.active a,.nav-tabs li.active a:focus,.nav-tabs li.active a:hover{color:#FFF;cursor:default;background-color:#0a85cf;border:1px solid #0a85cf;border-bottom-color:transparent;}
 .nav-contents .tab-content{padding:20px;}
-.form-group .text-word{margin:0;padding:5px 10px;background-color:transparent;border:none;border-bottom:1px solid #000000;}
+.form-group{margin-bottom:20px;}.form-group label{display:inline-block;vertical-align:bottom;margin-right:15px;width:100px;text-align:right;}
+.form-group .text-word{padding:5px 10px;background-color:transparent;border:none;border-bottom:1px solid #000000;vertical-align:bottom;margin-bottom:-2px;}
+.form-group .text-word:focus{outline:none;}
+.form-action-group{margin-top:40px;text-align:center;}
+.text-input-long{width:520px;}
+.text-input-medium{width:360px;}
+.text-input{width:200px;}

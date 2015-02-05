@@ -97,12 +97,40 @@
 }
 
 .form-group{
-	
-	.text-word{
-		margin:0;
+	margin-bottom:@large;
+	label{
+		display:inline-block;
+		vertical-align:bottom;
+		margin-right:@medium;
+		width: 100px;
+		text-align: right;		
+	}
+	.text-word{		
 		padding:@small @normal;
 		background-color: transparent;
 		border:none;
 		border-bottom:1px solid @border_black;
+		vertical-align:bottom;
+		margin-bottom:-2px;
 	}
+	.text-word:focus{
+		outline:none;
+	}
+}
+.form-action-group{
+	margin-top:@large*2;
+	text-align:center;
+	.btn-submit-form{
+
+	}
+}
+
+.text-input-long{
+	width:520px;
+}
+.text-input-medium{
+	width:360px;
+}
+.text-input{
+	width:200px;
 }
